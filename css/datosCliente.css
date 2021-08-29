@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --text-color : #2D4A99;
+    --banner-color: #91CFEB;
+    --gris-color: #5D5B5B;
+}
+
+header{
+    background-color:var(--banner-color) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div h1{
+    color: var(--text-color)
+}
+
+header div img {
+    width: 40%;
+    height: 40%;
+} 
+header ul{
+    display: flex; 
+    list-style-type: none; 
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+header ul li{
+    margin: 15px;
+}
+
+
+header ul li a{
+    text-decoration: none;
+    color:var(--gris-color);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center ;
+    margin-top: 15vh;
+    margin-left: 25vw;
+}
+
+main p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+    color: var(--gris-color);
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form div{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(8, 25px);
+    grid-gap: 5px;
+    justify-content: center;
+    border: var(--gris-color) 1px solid;
+    border-radius: 30px;
+    padding: 25px;
+    color: var(--gris-color);
+}
+
+main form label{
+    align-self: end;
+}
+
+
+main form div label.pais{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main form div input{
+    padding: 5px;
+    
+    
+
+}
+
+main form button{
+    border: none;
+    background-color: var(--banner-color);
+    border-radius: 40px;
+    color: var(--text-color);
+    padding: 6px 5px 5px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+main form button a {
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+
+.errorDNI{
+    border: 1px red solid;
+    background-color: rgba(255, 0, 0, 0.1)
+}

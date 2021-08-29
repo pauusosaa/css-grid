@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/datosCliente.css">
+    <title>Completá tus datos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <ul>
+            <li> <a href="datosEmpresa.html">Crear una cuenta de empresa > </a></li>
+        </ul>
+    </header>
+    <main>
+        <p>Completá tus datos</p>
+        <form action="">
+            <div class="contenedor">
+                <label for="nombre">Nombre</label>
+                <label for="apellido">Apellido</label>
+                <input autocomplete="off" type="text" name="nombre" id="nombre">
+                <input autocomplete="off" type="text" name="apellido" id="apellido">
+                <label for="dni">DNI</label>
+                <label for="fnac">Fecha de nacimiento</label>
+                <input autocomplete="off"  class="dni" type="text" name="dni">
+                <input autocomplete="off"  type="date">
+                <label for="tel">Telefono</label>
+                <label for="domicilio">Domicilio</label>
+                <input autocomplete="off"  type="text" name="tel">
+                <input autocomplete="off"  type="text" name="domicilio">
+                <label for="pais" class="pais">Pais</label>
+                <input autocomplete="off"  type="text" name="pais">
+            </div>
+            <button class="siguiente">Siguiente</button>
+            
+        </form>
+    </main>
+    <script src="js/datosCliente.js"></script>
+</body>
+</html>
